@@ -57,10 +57,6 @@ input{
     margin-bottom: 30px;
 }
 
-input[name=confirmpassword]{
-    margin-top: 30px;
-}
-
 .registerForm input{
     font-size: 1.4rem;
 }
@@ -114,29 +110,7 @@ input, form, .mainForm, form h2, p, a{
 .welcomePage h2{
     text-align: center;
     margin-top: 2rem;
-    color: rgb(39,107,165);
-}
-
-.mainBtn{
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 2rem;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgb(29, 129, 196);
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 600;
-}
-
-.mainBtn:hover{
-    color: rgb(39,107,165);
-    background-color: rgb(229, 235, 239);
-    cursor: pointer;
-    border: 1px solid rgb(39, 107, 165);
-    outline: auto;
+    color: #39AEA9;
 }
 
 @media screen and (max-width: 600px) {
@@ -150,7 +124,6 @@ input, form, .mainForm, form h2, p, a{
         width: 20rem;
     }
 }
-
 span{
     position: absolute;
     top: 33%;
@@ -166,6 +139,10 @@ span{
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.registerForm span{
+    top: 43%;
 }
 
 form{

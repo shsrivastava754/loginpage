@@ -5,6 +5,7 @@ function register(e){
     let password = document.getElementById('password').value;
     // console.log(email,userName,password);
     
+    
     let obj = {
         email:email,
         userName:userName,
@@ -38,8 +39,16 @@ function login(e){
 
 function handleToggle(e){
     let pass = document.getElementById('password');
+    // if(pass.length()==0){}
+    // console.log(pass.value.length);
+
     let toggleBtn = document.getElementById('toggle');
     // console.log(toggleBtn);
+
+    // if(pass.value.length==0){
+    //     toggleBtn.style.display = "none";
+    // }
+
     let currentType = pass.getAttribute('type');
     // pass.setAttribute('type',currentType==='password'?'text':'password');
     if(currentType==='password'){
