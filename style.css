@@ -4,13 +4,15 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(229, 235, 239);
+    /* background-color: rgb(229, 235, 239); */
+    background-color: #000000;
 }
 
 h1{
     text-align: center;
     margin-top: 3rem;
-    color: rgb(39, 107, 165);
+    /* color: rgb(39, 107, 165); */
+    color: #39AEA9;
 }
 
 form{
@@ -25,18 +27,12 @@ form{
     border-radius: 10px;
 }
 
-.headForm{
-    text-align: center;
-    font-weight: 600;
-    color: rgb(211, 222, 226);
-}
-
 .mainForm{
     margin-top: 3rem;
 }
 
 input{
-    color: rgb(113, 204, 227);
+    color: #0ff6eb;
     font-weight: 500;
     display: block;
     border: none;
@@ -53,11 +49,11 @@ input{
     color: rgb(211, 222, 226);
 }
 
-.loginForm input[type=text]{
+.loginForm input.username{
     margin-bottom: 50px;
 }
 
-.registerForm input[type=text], .registerForm input[type=email]{
+.registerForm input.username, .registerForm input[type=email]{
     margin-bottom: 30px;
 }
 
@@ -69,28 +65,28 @@ input[name=confirmpassword]{
     font-size: 1.4rem;
 }
 
-form button{
+form button.submitBtn{
     width: 80%;
     margin-top: 30px;
     margin-left: 54px;
     font-size: 20px;
     padding: 10px;
     border-radius: 30px;
-    background-color: rgb(29, 129, 196);
+    background-color: #39AEA9;
     color: #fff;
     outline: none;
     border: none;
     font-weight: 600;
 }
 
-form button:hover{
-    color: rgb(29, 129, 196);
-    background-color: rgb(229, 235, 239);
+form button.submitBtn:hover{
+    color: #39AEA9;
+    background-color: #000000;
     cursor: pointer;
     border: #fff;
 }
 
-.loginForm button{
+.loginForm button.submitBtn{
     margin-top: 5rem;
 }
 
@@ -111,7 +107,7 @@ a{
     margin-left: 10px;
 }
 
-input, form, .headForm, .mainForm, form h2, p, a{
+input, form, .mainForm, form h2, p, a{
     background-color: rgb(97, 126, 124);
 }
 
@@ -153,4 +149,25 @@ input, form, .headForm, .mainForm, form h2, p, a{
     form{
         width: 20rem;
     }
+}
+
+span{
+    position: absolute;
+    top: 33%;
+    right: 4rem;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 17px;
+    background-color: #39AEA9;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form{
+    position: relative;
 }

@@ -35,3 +35,21 @@ function login(e){
         alert("Password mismatch");
     }
 }
+
+function handleToggle(e){
+    let pass = document.getElementById('password');
+    let toggleBtn = document.getElementById('toggle');
+    // console.log(toggleBtn);
+    let currentType = pass.getAttribute('type');
+    // pass.setAttribute('type',currentType==='password'?'text':'password');
+    if(currentType==='password'){
+        pass.setAttribute('type','text');
+        toggleBtn.setAttribute('class','fa-solid fa-eye-slash');
+        // toggleBtn.textContent = "Hide";
+    }else{
+        pass.setAttribute('type','password');
+        toggleBtn.setAttribute('class','fa-sharp fa-solid fa-eye toggle');
+        // toggleBtn.textContent = "Show";
+
+    }
+}

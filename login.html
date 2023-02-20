@@ -14,20 +14,19 @@
     <h1>Login to my page</h1>
 
     <form class="loginForm" onsubmit="login()">
-        <div class="headForm">
-            <h2>Enter your credentials</h2>
-        </div>
 
         <div class="mainForm">
-            <input type="text" placeholder="Enter username" name="username" id="username" required>
+            <input type="text" placeholder="Enter username" class="username" name="username" id="username" required>
             <input type="password" placeholder="Enter Password" name="password" id="password" required>
-
-            <button type="submit">Login</button>
+            <!-- <span class="toggle" id="toggle">Show</span> -->
+            <span class="fa-sharp fa-solid fa-eye toggle" id="toggle" onclick="handleToggle()"></span>
+            <button type="submit" class="submitBtn">Login</button>
 
             <p>New user? <a href="signup.html">Register Here</a></p>
         </div>
     </form>
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/63bbcc9489.js" crossorigin="anonymous"></script>
 </body>
 </html>
