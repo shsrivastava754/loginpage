@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,14 +8,14 @@
     background-color: #000000;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-top: 3rem;
     /* color: rgb(39, 107, 165); */
     color: #39AEA9;
 }
 
-form{
+form {
     width: 35rem;
     margin: auto;
     margin-top: 3rem;
@@ -27,11 +27,11 @@ form{
     border-radius: 10px;
 }
 
-.mainForm{
+.mainForm {
     margin-top: 3rem;
 }
 
-input{
+input {
     color: #0ff6eb;
     font-weight: 500;
     display: block;
@@ -49,19 +49,20 @@ input{
     color: rgb(211, 222, 226);
 }
 
-.loginForm input.username{
+.loginForm input.username {
     margin-bottom: 50px;
 }
 
-.registerForm input.username, .registerForm input[type=email]{
+.registerForm input.username,
+.registerForm input[type=email] {
     margin-bottom: 30px;
 }
 
-.registerForm input{
+.registerForm input {
     font-size: 1.4rem;
 }
 
-form button.submitBtn{
+form button.submitBtn {
     width: 80%;
     margin-top: 30px;
     margin-left: 54px;
@@ -75,56 +76,62 @@ form button.submitBtn{
     font-weight: 600;
 }
 
-form button.submitBtn:hover{
+form button.submitBtn:hover {
     color: #39AEA9;
     background-color: #000000;
     cursor: pointer;
     border: #fff;
 }
 
-.loginForm button.submitBtn{
+.loginForm button.submitBtn {
     margin-top: 5rem;
 }
 
-.registerForm p{
+.registerForm p {
     text-align: center;
     margin-top: 40px;
     font-size: 20px;
 }
 
-.loginForm p{
+.loginForm p {
     text-align: center;
     margin-top: 40px;
     font-size: 20px;
 }
 
-a{
+a {
     color: #e4e9eaea;
     margin-left: 10px;
 }
 
-input, form, .mainForm, form h2, p, a{
+input,
+form,
+.mainForm,
+form h2,
+p,
+a {
     background-color: rgb(97, 126, 124);
 }
 
-.welcomePage h2{
+.welcomePage h2 {
     text-align: center;
     margin-top: 2rem;
     color: #39AEA9;
 }
 
 @media screen and (max-width: 600px) {
-    form{
+    form {
         width: 25rem;
     }
 }
-  
+
 @media screen and (max-width: 400px) {
-    form{
+    form {
         width: 20rem;
     }
 }
-span{
+
+span {
     position: absolute;
     top: 33%;
     right: 4rem;
@@ -141,10 +148,10 @@ span{
     padding-right: 10px;
 }
 
-.registerForm span{
+.registerForm span {
     top: 43%;
 }
 
-form{
+form {
     position: relative;
 }
