@@ -49,7 +49,7 @@ input {
     color: rgb(211, 222, 226);
 }
 
-.loginForm input.username {
+.loginForm input.username, .loginForm input.email {
     margin-bottom: 50px;
 }
 
@@ -154,4 +154,17 @@ span {
 
 form {
     position: relative;
+}
+
+.mainForm a.loginMethod{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.loginMethod i{
+    color: #2dc9c1;
+    background-color: transparent;
+    margin-right: 10px;
 }

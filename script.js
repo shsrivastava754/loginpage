@@ -3,7 +3,6 @@ function register(e) {
   let email = document.getElementById("email").value;
   let userName = document.getElementById("username").value;
   let password = document.getElementById("password").value;
-  // console.log(email,userName,password);
 
   let obj = {
     email: email,
@@ -12,10 +11,8 @@ function register(e) {
   };
 
   let json = JSON.stringify(obj);
-  // console.log(json);
 
   localStorage.setItem(userName, json);
-  // console.log(localStorage);
 }
 
 function login(e) {
@@ -36,25 +33,40 @@ function login(e) {
 
 function handleToggle(e) {
   let pass = document.getElementById("password");
-  // if(pass.length()==0){}
-  // console.log(pass.value.length);
 
   let toggleBtn = document.getElementById("toggle");
-  // console.log(toggleBtn);
-
-  // if(pass.value.length==0){
-  //     toggleBtn.style.display = "none";
-  // }
 
   let currentType = pass.getAttribute("type");
-  // pass.setAttribute('type',currentType==='password'?'text':'password');
+
   if (currentType === "password") {
     pass.setAttribute("type", "text");
     toggleBtn.setAttribute("class", "fa-solid fa-eye-slash");
-    // toggleBtn.textContent = "Hide";
+
   } else {
     pass.setAttribute("type", "password");
     toggleBtn.setAttribute("class", "fa-sharp fa-solid fa-eye toggle");
-    // toggleBtn.textContent = "Show";
+  }
+}
+
+function loginEmail(e){
+  event.preventDefault();
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
+  let currObj = null;
+  // console.log(currObj.length);
+  for(let i=0;i<localStorage.length;i++){
+    let obj = JSON.parse(localStorage.getItem(localStorage.key(i)));
+    if (obj.email==email){
+      currObj = obj;
+      break;
+    };
+  }
+
+  if(currObj==null){
+    alert("Email does not exists");
+  } else if (currObj.email === email && currObj.password === password) {
+    window.location.href = "index.html";
+  } else {
+    alert("Password mismatch");
   }
 }

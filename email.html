@@ -8,22 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <title>Email Login</title>
 </head>
 <body>
-    <h1>User Login</h1>
+    <h1>Email Login</h1>
 
-    <form class="loginForm" onsubmit="login()">
+    <form class="loginForm" onsubmit="loginEmail()">
 
         <div class="mainForm">
-            <input type="text" placeholder="Enter username" class="username" name="username" id="username" required>
+            <input type="text" placeholder="Enter email" class="email" name="email" id="email" required>
             <input type="password" placeholder="Enter Password" name="password" id="password" required>
-            <!-- <span class="toggle" id="toggle">Show</span> -->
             <span class="fa-sharp fa-solid fa-eye toggle" id="toggle" onclick="handleToggle()"></span>
             <button type="submit" class="submitBtn">Login</button>
 
             <p>New user? <a href="signup.html">Register Here</a></p>
-            <a href="email.html" class="loginMethod"><i class="fa-solid fa-envelope"></i>Email Login</a>
+            <a href="login.html" class="loginMethod"><i class="fa-solid fa-user"></i>Username Login</a>
         </div>
     </form>
 
